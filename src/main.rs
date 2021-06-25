@@ -9,7 +9,7 @@ async fn main() -> io::Result<()> {
             .service(hello)
             .service(index)
     })
-    .bind("127.0.0.1:8080")?
+    .bind("https://murmuring-caverns-23223.herokuapp.com")?
     .run()
     .await
 }
